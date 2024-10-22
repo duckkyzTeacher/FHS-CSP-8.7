@@ -1,7 +1,7 @@
 # Problem 1: Swap the first a last values of the following lists:
 list1 = []
 for num in range(10):
-    list1.append(num)
+    list1.append(num+1)
 list2 = ["pizza", "pasta", "calzone", "salad", "soup"]
 
 list2.sort()
@@ -21,7 +21,7 @@ print(list2) #should print ["soup", "pasta", "pizza", "salad", "calzone"]
 import random
 randList = []
 for lcv in range(10):
-    randList.append(random.random()*100)
+    randList.append(int(random.random()*100))
 
 oddCount = 0;
 #Write your code here
