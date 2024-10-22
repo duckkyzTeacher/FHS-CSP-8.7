@@ -1,51 +1,55 @@
-# Problem 1: Create and print a list
-# Task: Create a list called `fruits` containing "apple", "banana", "orange", "grape", and "strawberry".
-# Write a program that prints the entire list, then prints each fruit on a new line using a `for` loop.
+# Problem 1: Swap the first a last values of the following lists:
+list1 = []
+for num in range(10):
+    list1.append(num)
+list2 = ["pizza", "pasta", "calzone", "salad", "soup"]
+
+list2.sort()
+list1.reverse()
+
+
+#Write your code here
+
+
+print(list1) #should print [1, 9, 8, 7, 6, 5, 4, 3, 2, 10]
+print(list2) #should print ["soup", "pasta", "pizza", "salad", "calzone"]
 
 
 
+# Problem 2: Count the number of odd numbers in the list:
 
-# Problem 2: Update and modify the list
-# Task: Start with the list from Problem 1. Update "banana" to "blueberry", remove "grape", 
-# and add "watermelon" to the end of the list. Print the modified list.
+import random
+randList = []
+for lcv in range(10):
+    randList.append(random.random()*100)
 
-
-
-
-# Problem 3: Inserting and sorting
-# Task: Insert "mango" between "apple" and "blueberry". Sort the list alphabetically and print the result.
-
+oddCount = 0;
+#Write your code here
 
 
 
-# Problem 4: List slicing
-# Task: Given the list `numbers = [5, 10, 15, 20, 25, 30, 35, 40]`, print the following:
-# - The first 4 elements
-# - The last 3 elements
-# - All elements except the first and last
+print(oddCount)
+
+# Problem 3: Shift all items left 2. If the item would be outside the array, wrap it to the back.
+wrapList = []
+for num in range(20,30):
+    wrapList.append(num)
+
+
+#write your code here
+
+
+print(wrapList)
 
 
 
+# Problem 4: Use a loop to remove every element from the list except the middle element
+removeList = []
+for num in range(7):
+    removeList.append(int(random.random()*100))
+removeList[int(len(removeList)/2)] = 999
 
-# Problem 5: Fix the code
-# The following code has a syntax error. Fix the error and make sure the program prints the expected output:
-# Expected Output: "grape"
-
-fruits = ["apple", "orange", "banana", "grape"]
-print fruits[3
+#Write your code here
 
 
-
-# Problem 6: Logic fix
-# This code attempts to remove all instances of "banana" from a list but doesn’t work as intended. Fix the logic.
-# Expected output: ["apple", "orange"]
-
-fruits = ["banana", "apple", "banana", "orange", "banana"]
-lcv = 1
-
-while lcv < len(fruits):
-    if fruits[lcv] != "banana":
-        del fruits[lcv]
-    lcv = lcv + 1
-    
-print(fruits)
+print(removeList)
